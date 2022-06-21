@@ -29,6 +29,9 @@ Route::get('/admin', function () {
 Route::get('/admin/user', function () {
     return view('admin.user');
 });
+Route::get('/admin/user/edit', function () {
+    return view('admin.user-edit');
+});
 Route::get('/admin/jabatan', function () {
     return view('admin.jabatan');
 });
@@ -54,6 +57,12 @@ Route::get('/user/file', function () {
 });
 Route::get('/user/laporan', function () {
     return view('user.laporan');
+});
+Route::get('/user/acclaporan', function () {
+    return view('user.acc-laporan');
+});
+Route::get('/user/acclaporan/acc', function () {
+    return view('user.acc-laporan-edit');
 });
 Route::get('/user/profile', function () {
     return view('user.profile');
